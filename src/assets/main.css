@@ -14,15 +14,19 @@
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
-  color: var(--primary);
+  color: white;
 }
 
 body {
-  background: #F3D1BF;
+  background: #28293E;
 }
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 
@@ -39,8 +43,8 @@ button, .btn {
   display: inline-block;
 }
 button:hover, .btn:hover {
-  background: var(--primary);
-  color: white;
+  background: white;
+  color: var(--secondary);
 }
 button:disabled {
   opacity: 0.5;

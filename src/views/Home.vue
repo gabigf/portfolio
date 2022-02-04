@@ -6,6 +6,9 @@
       <p class="summary">I provide a full service range including technical skills, design, business understanding.</p>
       <button>See my work</button>
     </article>
+    <aside>
+      <img src="@/assets/images/home-img.png" alt="Home image with a profile picture">
+    </aside>
   </section>
 </template>
 
