@@ -1,0 +1,50 @@
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700;800;900&display=swap');
+
+/* variables */
+:root {
+  --primary: #391400;
+  --secondary: #EF6D58;
+}
+
+
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  color: var(--primary);
+}
+
+body {
+  background: #F3D1BF;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* buttons */
+button, .btn { 
+  background: var(--secondary);
+  color: #fff;
+  border-radius: 8px;
+  border: 0;
+  padding: 8px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+}
+button:hover, .btn:hover {
+  background: var(--primary);
+  color: white;
+}
+button:disabled {
+  opacity: 0.5;
+  color: var(--primary);
+  background: var(--secondary);
+  cursor: not-allowed;
+}
