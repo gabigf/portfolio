@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <h2 class="logo-container">Gabi</h2>
+    <h2 class="logo">Gabi</h2>
 
     <ul class="nav-options">
       <li class="nav-link">Projects</li>
@@ -26,13 +26,29 @@ export default {
     margin: 0.5rem auto;
     background: transparent;
   }
-  
+
+  .logo {
+    cursor: pointer;
+  }
+
+  .logo:hover {
+    color: var(--secondary);
+  }
 
   .nav-options {
     display: flex;
     justify-content: space-between;
     width: 30%;
     color: white;
+  }
+
+  .nav-link {
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+  }
+
+  .nav-link:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.64);
   }
 
   .contact {

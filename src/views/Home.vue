@@ -4,7 +4,10 @@
       <h3 class="name">Gabriela Guimarães</h3>
       <p class="tag-line">Making digital products</p>
       <p class="summary">I provide a full service range including technical skills, design, business understanding.</p>
-      <button class="primary-btn">See my work</button>
+      <div class="contact-container">
+        <button class="primary-btn">See my work</button>
+        <p>Contact Me</p>
+      </div>
     </article>
     <aside>
       <img class="home-img" src="@/assets/images/home-img.png" alt="Home image with a profile picture">
@@ -54,4 +57,21 @@ export default {
   color: rgba(255, 255, 255, 0.64);
   line-height: 2rem;
 }
+
+.contact-container {
+  display: flex;
+  align-items: center;
+}
+
+.contact-container p {
+  margin-left: 3rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.contact-container p:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.64);
+}
+
+
 </style>
