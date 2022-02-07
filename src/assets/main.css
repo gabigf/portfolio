@@ -1,5 +1,5 @@
 /* Custom fonts */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&display=swap');
 
 /* variables */
 :root {
@@ -13,7 +13,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Epilogue', sans-serif;
   color: white;
 }
 
@@ -35,20 +35,28 @@ ul {
 button, .btn { 
   background: var(--secondary);
   color: #fff;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 0;
   padding: 8px 12px;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   display: inline-block;
 }
+
 button:hover, .btn:hover {
   background: white;
   color: var(--secondary);
 }
+
 button:disabled {
   opacity: 0.5;
   color: var(--primary);
   background: var(--secondary);
   cursor: not-allowed;
+}
+
+.secondary-dark {
+  background: none;
+  border: 2px solid rgba(255, 255, 255, .29);
+  padding: 1rem 2rem;
 }

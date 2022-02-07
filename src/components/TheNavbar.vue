@@ -1,13 +1,13 @@
 <template>
   <nav>
-    <h2 class="logo">Gabi</h2>
+    <h2 class="logo-container"><img class="logo" src="@/assets/images/logo.svg" /></h2>
 
     <ul class="nav-options">
       <li class="nav-link">Projects</li>
       <li class="nav-link">About</li>
       <li class="nav-link">Resume</li>
-      <li class="nav-link contact">Contact</li>
     </ul>
+      <button class="secondary-dark contact">Contact</button>
   </nav>
 </template>
 
@@ -22,7 +22,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 80%;
     margin: 0.5rem auto;
     background: transparent;
   }
@@ -34,5 +34,10 @@ export default {
     color: white;
   }
 
+  .contact {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 0.5rem;
+  }
 
 </style>
