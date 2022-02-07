@@ -2,12 +2,12 @@
   <section class="home">
     <article class="intro">
       <h3 class="name">Gabriela Guimarães</h3>
-      <p class="tag-line">Making digital products.</p>
+      <p class="tag-line">Making digital products</p>
       <p class="summary">I provide a full service range including technical skills, design, business understanding.</p>
-      <button>See my work</button>
+      <button class="primary-btn">See my work</button>
     </article>
     <aside>
-      <img src="@/assets/images/home-img.png" alt="Home image with a profile picture">
+      <img class="home-img" src="@/assets/images/home-img.png" alt="Home image with a profile picture">
     </aside>
   </section>
 </template>
@@ -19,5 +19,39 @@ export default {
 </script>
 
 <style>
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5.5rem;
+}
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 32rem;
+  height: 24rem;
+}
+
+.name {
+  text-transform: uppercase;
+  color: var(--secondary);
+  line-height: 2rem;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.tag-line {
+  font-size: 4.5rem;
+  text-transform: capitalize;
+  letter-spacing: -2px;
+  font-weight: 800;
+}
+
+.summary {
+  color: rgba(255, 255, 255, 0.64);
+  line-height: 2rem;
+}
 </style>

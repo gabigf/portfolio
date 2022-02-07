@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <h2 class="logo-container"><img class="logo" src="@/assets/images/logo.svg" /></h2>
+    <h2 class="logo-container">Gabi</h2>
 
     <ul class="nav-options">
       <li class="nav-link">Projects</li>
@@ -26,6 +26,7 @@ export default {
     margin: 0.5rem auto;
     background: transparent;
   }
+  
 
   .nav-options {
     display: flex;

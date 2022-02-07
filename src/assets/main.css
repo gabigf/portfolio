@@ -60,3 +60,10 @@ button:disabled {
   border: 2px solid rgba(255, 255, 255, .29);
   padding: 1rem 2rem;
 }
+
+.primary-btn {
+  text-transform: uppercase;
+  font-weight: 800;
+  width: 9rem;
+  padding: 1rem;
+}
