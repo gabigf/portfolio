@@ -20,7 +20,7 @@
       <aside>
         <img src="@/assets/images/about-img.png" alt="About section">
       </aside>
-      <p class="about-content">I have been working in the specialty coffee industry for the past 7 years. I fell into it when I joined the team at a doughnut cafe. Very quickly I was promoted to be the manager, during my time there I made many changes to increase efficiency and started hosting and organizing events to increase revenue as well as implementing other small revenue channels.
+      <p class="about-content">I have been working in the specialty coffee industry for the past 7 years. I fell into it when I joined the team at a doughnut cafe. Very quickly I was promoted to be the manager, during my time there I made many changes to increase efficiency and started organizing events to increase revenue as well as implementing other small revenue channels.
       From then on I have managed 3 other cafes with small teams of around 5 people to my previous job where I managed roughly 20-25 people.</p>
     </div>
   </section>
