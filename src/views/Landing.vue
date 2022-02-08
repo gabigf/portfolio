@@ -10,12 +10,19 @@
       </div>
     </article>
     <aside>
-      <img class="home-img" src="@/assets/images/home-img.png" alt="Home image with a profile picture">
+      <img class="home-img" src="@/assets/images/home-img.png" alt="Home page image">
     </aside>
   </section>
 
   <section class="about">
-    <img src="@/assets/images/about-img.png" alt="">
+    <h2 class="about-header">About Me</h2>
+    <div class="about-bio">
+      <aside>
+        <img src="@/assets/images/about-img.png" alt="About section">
+      </aside>
+      <p class="about-content">I have been working in the specialty coffee industry for the past 7 years. I fell into it when I joined the team at a doughnut cafe. Very quickly I was promoted to be the manager, during my time there I made many changes to increase efficiency and started hosting and organizing events to increase revenue as well as implementing other small revenue channels.
+      From then on I have managed 3 other cafes with small teams of around 5 people to my previous job where I managed roughly 20-25 people.</p>
+    </div>
   </section>
 </template>
 
@@ -79,8 +86,28 @@ export default {
 }
 
 .about {
+  padding-top: 5rem;
   height: 100vh;
   background: #FDF0E9;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-header {
+  font-size: 3rem;
+}
+
+.about-bio {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-content {
+  width: 51%;
 }
 
 </style>
