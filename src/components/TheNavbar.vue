@@ -44,11 +44,11 @@ export default {
 
   .nav-link {
     cursor: pointer;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
   }
 
   .nav-link:hover {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.64);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.64);
   }
 
   .contact {

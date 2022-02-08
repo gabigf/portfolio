@@ -1,18 +1,18 @@
 <template>
   <TheNavbar />
-  <Home />
+  <Landing />
 </template>
 
 <script>
 import TheNavbar from "./components/TheNavbar.vue"
-import Home from "./views/Home.vue"
+import Landing from "./views/Landing.vue"
 
 
 export default {
   name: "App",
   components: {
    TheNavbar,
-   Home
+   Landing
   }
 };
 </script>

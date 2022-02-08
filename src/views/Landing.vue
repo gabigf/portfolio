@@ -13,6 +13,10 @@
       <img class="home-img" src="@/assets/images/home-img.png" alt="Home image with a profile picture">
     </aside>
   </section>
+
+  <section class="about">
+    <img src="@/assets/images/about-img.png" alt="">
+  </section>
 </template>
 
 <script>
@@ -27,6 +31,7 @@ export default {
   justify-content: space-around;
   align-items: center;
   margin-top: 5.5rem;
+  height: 80vh;
 }
 
 .intro {
@@ -73,5 +78,9 @@ export default {
   border-bottom: 2px solid rgba(255, 255, 255, 0.64);
 }
 
+.about {
+  height: 100vh;
+  background: #FDF0E9;
+}
 
 </style>
