@@ -1,24 +1,13 @@
-# portfolio
+# Gabriela Guimarães Portfolio
 
-## Project setup
-```
-npm install
-```
+_Work in Progress_. A portfolio website made to display my skills, projects and my background. I will be launching this on Monday, Feb 14th so stay tuned for the live link!
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Tech Stack
+- VueJS
+- Javascript
+- CSS
+- HTML
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Sneak Peek
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+!["screenshot description"](https://github.com/gabigf/portfolio/blob/master/public/screenshots/sneak-peek.png)
