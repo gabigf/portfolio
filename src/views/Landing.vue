@@ -15,14 +15,16 @@
   </section>
 
   <section class="about">
+    <article class="about-summary">
     <h2 class="about-header">About Me</h2>
-    <div class="about-bio">
-      <aside>
-        <img src="@/assets/images/about-img.png" alt="About section">
-      </aside>
-      <p class="about-content">I have been working in the specialty coffee industry for the past 7 years. I fell into it when I joined the team at a doughnut cafe. Very quickly I was promoted to be the manager, during my time there I made many changes to increase efficiency and started organizing events to increase revenue as well as implementing other small revenue channels.
+      <p class="about-content">I have been working in the specialty coffee industry for the past 7 years. I fell into it when I joined the team at a doughnut cafe.<br><br>
+      Very quickly I was promoted to be the manager, during my time there I made many changes to increase efficiency and started organizing events to increase revenue as well as implementing other small revenue channels.
       From then on I have managed 3 other cafes with small teams of around 5 people to my previous job where I managed roughly 20-25 people.</p>
-    </div>
+    </article>
+  <span class="thin-line"></span>
+    <!-- <section class="faq">
+      This is the FAQ
+    </section> -->
   </section>
 </template>
 
@@ -86,28 +88,38 @@ export default {
 }
 
 .about {
-  padding-top: 5rem;
+  padding-top: 4rem;
   height: 100vh;
   background: #FDF0E9;
   color: var(--primary);
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
+
+.about-summary {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+
+.thin-line{
+    content: '';
+    margin: 4rem 0 0 1rem;
+    height: 2px;
+    background-color: #F3D1BF;
+    width: 80%;
+    align-self: center;
+  } 
 
 .about-header {
   font-size: 3rem;
 }
 
-.about-bio {
-  display: flex;
-  width: 90%;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .about-content {
-  width: 51%;
+  width: 71%;
+  color: var(--primary-light);
+  font-size: 1.25rem;
+  line-height: 32px;
 }
 
 </style>
