@@ -5,13 +5,30 @@
       <p class="about-content">Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.<br><br>
       A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.</p>
     </article>
-  <span class="thin-line"></span>
+    <span class="thin-line"></span>
+
+    <section class="faq">
+      <aside class="faq-header">
+        <p class="name">FAQ</p>
+        <p class="faq-heading">Frequently Asked Questions</p>
+        <p class="faq-summary">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
+        <p class="faq-btn">Contact Me</p>
+      </aside>
+
+    <FaqAccordion />
+    </section>
   </section>
 </template>
 
 <script>
+import FaqAccordion from "./FaqAccordion.vue"
 export default {
+  components: {
+    FaqAccordion
+  },
+  setup() {
 
+  }
 }
 </script>
 
@@ -39,7 +56,7 @@ export default {
     background-color: #F3D1BF;
     width: 80%;
     align-self: center;
-  } 
+} 
 
 .about-header {
   font-size: 3rem;
@@ -50,5 +67,45 @@ export default {
   color: var(--primary-light);
   font-size: 1.25rem;
   line-height: 32px;
+}
+
+.faq {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 2rem;
+}
+
+.faq-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
+  height: 304px;
+}
+
+.faq-heading {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+.faq-summary {
+  line-height: 32px;
+  color: var(--primary-light);
+}
+
+.faq-btn {
+  background: transparent;
+  color: var(--primary);
+  line-height: 2rem;
+  width: fit-content;
+  padding: 0;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.faq-btn:hover {
+  border-bottom: 1px solid var(--primary);
+  background: transparent;
 }
 </style>

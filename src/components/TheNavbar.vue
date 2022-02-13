@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <h2 class="logo">Gabi</h2>
+    <h2 class="logo">G.</h2>
 
     <ul class="nav-options">
       <li class="nav-link">Projects</li>
@@ -22,13 +22,14 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0.5rem auto;
     background: transparent;
   }
 
   .logo {
     cursor: pointer;
+    font-size: 3rem;
   }
 
   .logo:hover {
