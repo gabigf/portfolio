@@ -35,7 +35,7 @@ export default {
 <style>
 .about {
   padding-top: 4rem;
-  height: 100vh;
+  height: 120vh;
   background: #FDF0E9;
   color: var(--primary);
   display: flex;
