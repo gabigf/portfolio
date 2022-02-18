@@ -2,12 +2,12 @@
   <div class="faq-container">
     <div class="accordion" v-for="faq in faqData" :key="faq">
       
-      <div class="accordion-item" @click="handleClick(faq)">
+      <div class="accordion-item" @click="faq.isOpen = !faq.isOpen">
         <button class="accordion-question">
           {{ faq.question}}
           <img class="arrow" src="../assets/images/arrow.png" alt="expand" />
         </button>
-        <div class="accordion-collapse collapse" :class="[faq.isOpen ? collapse : '']">
+        <div class="accordion-collapse " v-if="faq.isOpen">
           <div class="accordion-content">
             {{ faq.answer }}
           </div>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { watchEffect, ref } from 'vue'
+import { ref } from 'vue'
 export default {
   name: "Faq",
   setup() {
@@ -49,7 +49,7 @@ export default {
     ]);
 
     const handleClick = (data) => {
-     data.isOpen = !data.isOpen;
+      data.isOpen = !data.isOpen;
       console.log(data);
     };
 
