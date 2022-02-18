@@ -6,7 +6,7 @@
       <p class="summary">I provide a full service range including technical skills, design, business understanding.</p>
       <div class="contact-container">
         <button class="primary-btn">See my work</button>
-        <p>Contact Me</p>
+        <p>Download my CV</p>
       </div>
     </article>
     <aside>

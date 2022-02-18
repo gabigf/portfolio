@@ -5,7 +5,7 @@
       <div class="accordion-item" @click="faq.isOpen = !faq.isOpen" :class="{ active: faq.isOpen }" >
         <button class="accordion-question">
           {{ faq.question}}
-          <img class="arrow" src="../assets/images/arrow.png" alt="expand" />
+          <img class="arrow" src="../assets/images/arrow.png" alt="+" :class="{ flip: faq.isOpen }" />
         </button>
         <div class="accordion-collapse" v-if="faq.isOpen">
           <div class="accordion-content">
@@ -58,7 +58,6 @@ export default {
   padding-top: 3.5rem;
 }
 
-
 .accordion {
   background: transparent;
 }
@@ -105,5 +104,15 @@ export default {
 
 .active {
   background: white;
+}
+
+.flip {
+  animation: spin1 10ms ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin1 {
+0% { transform: rotate(0deg);}
+100% { transform: rotate(180deg);}
 }
 </style>
