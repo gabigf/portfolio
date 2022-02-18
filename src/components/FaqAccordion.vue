@@ -13,7 +13,6 @@
           </div>
         </div>
       </div>
-      
     </div>
   </div>
 </template>
@@ -48,12 +47,7 @@ export default {
       },
     ]);
 
-    const handleClick = (data) => {
-      data.isOpen = !data.isOpen;
-      console.log(data);
-    };
-
-    return { handleClick, faqData };
+    return { faqData };
   }
 };
 </script>
@@ -98,58 +92,5 @@ export default {
   border: none;
   background: transparent;
   color: var(--primary);
-}
-
-.accordion-collapse {
-  transition: height 300ms ease;
-  display: flex;
-  align-items: center;
-  line-height: 2rem;
-  padding: 0 2rem 3rem 2rem;
-  width: 83%;
-  color: var(--primary-light);
-}
-
-.accordion-collapse.collapse {
-  display: none;
-}
-
-.accordion__collapse.collapsing {
-  height: 0;
-  overflow: hidden;
-}
-
-.accordion__collapse.open {
-  display: block;
-}
-
-.vcp__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 6.5rem;
-  font-size: 24px;
-  font-weight: 700;
-  padding: 0 2rem 0 2rem;
-}
-.vcp__header-icon[data-v-64321428] {
-  display: flex;
-  align-items: center;
-  transition: transform 0.3s cubic-bezier(0.5, 0.25, 0, 1);
-}
-.vcp--expanded .vcp__header-icon[data-v-64321428] {
-  transform-origin: center;
-  transform: rotate(180deg);
-}
-
-.vcp__header-icon > span[data-v-64321428] {
-  display: flex;
-  height: 24px;
-  width: 24px;
-}
-.vcp__header-icon[data-v-64321428] svg {
-  height: 100%;
-  width: 100%;
 }
 </style>
