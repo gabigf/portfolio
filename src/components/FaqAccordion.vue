@@ -2,12 +2,12 @@
   <div class="faq-container">
     <div class="accordion" v-for="faq in faqData" :key="faq">
       
-      <div class="accordion-item" @click="faq.isOpen = !faq.isOpen">
+      <div class="accordion-item" @click="faq.isOpen = !faq.isOpen" :class="{ active: faq.isOpen }" >
         <button class="accordion-question">
           {{ faq.question}}
           <img class="arrow" src="../assets/images/arrow.png" alt="expand" />
         </button>
-        <div class="accordion-collapse " v-if="faq.isOpen">
+        <div class="accordion-collapse" v-if="faq.isOpen">
           <div class="accordion-content">
             {{ faq.answer }}
           </div>
@@ -58,9 +58,6 @@ export default {
   padding-top: 3.5rem;
 }
 
-.collapse {
-  display: none;
-}
 
 .accordion {
   background: transparent;
@@ -92,5 +89,21 @@ export default {
   border: none;
   background: transparent;
   color: var(--primary);
+}
+
+.accordion-collapse {
+  display: flex;
+  justify-content: center;
+  height: 8.5rem;
+}
+
+.accordion-content {
+  width: 87%;
+  color: var(--primary-light);
+  line-height: 2rem;
+}
+
+.active {
+  background: white;
 }
 </style>
