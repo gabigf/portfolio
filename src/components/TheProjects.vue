@@ -1,0 +1,17 @@
+<template>
+  <section class="projects">
+
+  </section>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+.projects {
+  height: 100vh;
+}
+</style>
