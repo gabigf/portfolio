@@ -35,12 +35,13 @@ export default {
 <style>
 .about {
   padding-top: 4rem;
-  height: 140vh;
+  height: fit-content;
   background: #FDF0E9;
   color: var(--primary);
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-bottom: 7rem;
 }
 
 .about-summary {

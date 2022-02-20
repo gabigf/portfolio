@@ -2,7 +2,7 @@
   <div class="faq-container">
     <div class="accordion" v-for="faq in faqData" :key="faq">
       
-      <div class="accordion-item" @click="faq.isOpen = !faq.isOpen" :class="{ active: faq.isOpen }" >
+      <div class="accordion-item" @click="handleClick(faq)" :class="{ active: faq.isOpen }" >
         <button class="accordion-question">
           {{ faq.question}}
           <img class="arrow" src="../assets/images/arrow.png" alt="+" :class="{ flip: faq.isOpen }" />
@@ -29,7 +29,7 @@ export default {
         question: "A digital agency is a business",
         answer:
           "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
-        isOpen: false,
+        isOpen: true,
       },
       {
         id: 2,
@@ -47,7 +47,16 @@ export default {
       },
     ]);
 
-    return { faqData };
+    const handleClick = el => {
+      el.isOpen = !el.isOpen;
+      for (const faq of faqData.value) {
+        if (faq.id !== el.id) {
+          faq.isOpen = false;
+        }
+      }
+    }
+
+    return { faqData, handleClick };
   }
 };
 </script>
