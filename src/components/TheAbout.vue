@@ -7,16 +7,18 @@
     </article>
     <span class="thin-line"></span>
 
-    <section class="faq">
-      <aside class="faq-header">
-        <p class="name">FAQ</p>
-        <p class="faq-heading">Frequently Asked Questions</p>
-        <p class="faq-summary">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
-        <p class="faq-btn">Contact Me</p>
-      </aside>
-
-    <FaqAccordion />
-    </section>
+    <div class="about-bottom">
+      <section class="faq">
+        <aside class="faq-header">
+          <p class="name">FAQ</p>
+          <p class="faq-heading">Frequently Asked Questions</p>
+          <p class="faq-summary">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
+          <p class="faq-btn">Contact Me</p>
+        </aside>
+        <FaqAccordion />
+      </section>
+      <span class="thin-line bottom"></span>
+    </div>
   </section>
 </template>
 
@@ -25,9 +27,6 @@ import FaqAccordion from "./FaqAccordion.vue"
 export default {
   components: {
     FaqAccordion
-  },
-  setup() {
-
   }
 }
 </script>
@@ -35,13 +34,11 @@ export default {
 <style>
 .about {
   padding-top: 4rem;
-  height: fit-content;
   background: #FDF0E9;
   color: var(--primary);
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-bottom: 7rem;
 }
 
 .about-summary {
@@ -50,14 +47,18 @@ export default {
   margin: 0 2rem;
 }
 
-.thin-line{
-    content: '';
-    margin: 4rem 0 0 1rem;
-    height: 2px;
-    background-color: #F3D1BF;
-    width: 80%;
-    align-self: center;
-} 
+.thin-line {
+  content: '';
+  margin: 4rem 0 0 1rem;
+  height: 2px;
+  background-color: #F3D1BF;
+  width: 80%;
+  align-self: center;
+}
+
+.bottom {
+  margin-top: 8rem;
+}
 
 .about-header {
   font-size: 3rem;
@@ -70,18 +71,23 @@ export default {
   line-height: 32px;
 }
 
+.about-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
 .faq {
   display: flex;
   justify-content: space-between;
-  margin: 1.5rem 2rem;
+  margin: 4rem 2rem;
 }
 
 .faq-header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 33%;
-  height: 304px;
+  height: 20rem;
 }
 
 .faq-heading {

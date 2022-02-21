@@ -1,11 +1,12 @@
 /* Custom fonts */
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;800&display=swap');
 
 /* variables */
 :root {
   --primary: #391400;
   --primary-light: rgba(57, 20, 0, 0.64);
   --secondary: #EF6D58;
+  --light-bg: #FDDFCF;
 }
 
 
@@ -29,6 +30,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
