@@ -16,7 +16,7 @@
           <p class="tech-stack">{{ project.techStack }}</p>
           <p class="project-description">{{ project.description }}</p>
           <div class="project-links">
-            <a class="link" :href="project.liveSite" target="_blank">Live Site</a>  
+            <a class="link" :href="project.liveSite" target="_blank" v-if="project.liveSite">Live Site</a>  
             <a class="link" :href="project.github" target="_blank">Github</a>
           </div>
         </div>
@@ -44,8 +44,7 @@ export default {
         techStack: 'jQuery, NodeJS, Express, SCSS',
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
         imageUrl: 'PizzaNGo',
-        github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro"
+        github: 'https://github.com/sidpatel93/Pizza-N-Go'
       },
       {
         id: 3,
@@ -61,25 +60,25 @@ export default {
         title: 'Live-Chat',
         techStack: 'Vue, Firebase, HTML, CSS',
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
-        imageUrl: 'PizzaNGo',
+        imageUrl: 'LiveChat',
         github: 'https://github.com/sidpatel93/Pizza-N-Go',
         liveSite: "www.gabi.pro"
       },
       {
         id: 5,
-        title: 'Pizza N Go',
+        title: 'Task Manager',
         techStack: 'jQuery, NodeJS, Express, SCSS',
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
-        imageUrl: 'PizzaNGo',
+        imageUrl: 'Task-manager',
         github: 'https://github.com/sidpatel93/Pizza-N-Go',
         liveSite: "www.gabi.pro"
       },
       {
         id: 6,
-        title: 'Pizza N Go',
+        title: 'Wi-Know',
         techStack: 'jQuery, NodeJS, Express, SCSS',
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
-        imageUrl: 'PizzaNGo',
+        imageUrl: 'Wi-Know',
         github: 'https://github.com/sidpatel93/Pizza-N-Go',
         liveSite: "www.gabi.pro"
       }
