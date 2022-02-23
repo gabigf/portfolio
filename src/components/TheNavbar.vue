@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <h2 class="logo">G.</h2>
+    <h2 class="logo">GG</h2>
 
-    <ul class="nav-options">
+    <ul class="nav-options" >
       <li class="nav-link">Projects</li>
       <li class="nav-link">About</li>
       <li class="nav-link">Resume</li>
@@ -57,5 +57,7 @@ export default {
     font-weight: 800;
     margin-top: 0.5rem;
   }
+
+  
 
 </style>
