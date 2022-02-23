@@ -1,13 +1,14 @@
 <template>
   <section class="projects">
     <header class="projects-header">
+      <span class="name">portfolio</span>
       <h2>Projects</h2>
       <p>A collection of my recent works, check out my <a href="https://github.com/gabigf" target="_blank">github</a> to see my code.</p>
     </header>
     <div class="project-container">
       <article class="project" v-for="project in projectData" :key="project">
         <div class="project-top">
-          <img :src="require(`../assets/images/${project.imageUrl}.png`)" class="project-img" />
+          <img :src="require(`../assets/images/${project.imageUrl}.png`)" class="project-img" :class="{ screenImg: !project.responsive }" />
 
         </div>
         <div class="project-details">
@@ -30,57 +31,63 @@ export default {
     const projectData = [
       {
         id: 1,
-        title: 'Pizza N Go',
-        techStack: 'jQuery, NodeJS, Express, SCSS',
-        description: 'Pizza N Go is a food ordering app that is made for the user and the owner of the restaurant.  It was made as a group project.',
-        imageUrl: '3Devices',
-        github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro"
+        title: 'Mint A Lisa',
+        techStack: 'React, Solidity, NodeJS, CSS',
+        description: 'A Mona Lisa NFT collection running on the Ethereum blockchain.',
+        imageUrl: 'MintALisa',
+        github: 'https://github.com/AbdulSaid/MintALisa',
+        liveSite: "www.gabi.pro",
+        responsive: true
       },
       {
         id: 2,
         title: 'Pizza N Go',
         techStack: 'jQuery, NodeJS, Express, SCSS',
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
-        imageUrl: '3Devices',
+        imageUrl: 'PizzaNGo',
         github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro"
+        liveSite: "www.gabi.pro",
+        responsive: true
       },
       {
         id: 3,
-        title: 'Pizza N Go',
-        techStack: 'jQuery, NodeJS, Express, SCSS',
-        description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
-        imageUrl: '3Devices',
-        github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro"
+        title: 'Playlister',
+        techStack: 'Vue, Firebase, HTML, CSS',
+        description: 'An app that allows a user to login to view, create, edit and delete playlists.',
+        imageUrl: 'Playlister',
+        github: 'https://github.com/gabigf/playlister',
+        liveSite: "www.gabi.pro",
+        responsive: false
       },
       {
         id: 4,
-        title: 'Pizza N Go',
-        techStack: 'jQuery, NodeJS, Express, SCSS',
+        title: 'Live-Chat',
+        techStack: 'Vue, Firebase, HTML, CSS',
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
-        imageUrl: '3Devices',
+        imageUrl: 'PizzaNGo',
         github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro"
+        liveSite: "www.gabi.pro",
+        responsive: true
       },
       {
         id: 5,
         title: 'Pizza N Go',
         techStack: 'jQuery, NodeJS, Express, SCSS',
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
-        imageUrl: '3Devices',
+        imageUrl: 'PizzaNGo',
         github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro"
+        liveSite: "www.gabi.pro",
+        responsive: true
       },
       {
         id: 6,
         title: 'Pizza N Go',
         techStack: 'jQuery, NodeJS, Express, SCSS',
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
-        imageUrl: '3Devices',
+        imageUrl: 'PizzaNGo',
         github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro"
+        liveSite: "www.gabi.pro",
+        responsive: true
       }
     ];
 
@@ -92,9 +99,9 @@ export default {
 <style>
 .projects {
   padding: 4rem 2rem 0 2rem;
-  height: 100vh;
+  height: 150vh;
   width: 100%;
-  background-image: linear-gradient(180deg, #FDF0E9  50%, transparent 50%);
+  background-image: linear-gradient(180deg, #FDF0E9  37%, transparent 37%);
   color: var(--primary);
 }
 
@@ -120,7 +127,7 @@ export default {
 
 .projects-header h2 {
   font-size: 3rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0 1rem 0;
 }
 
 .projects-header p {
@@ -143,6 +150,11 @@ export default {
 .project-img {
   width: 400px;
   padding-bottom: 0.5rem;
+}
+
+.screenImg {
+  padding-bottom: 0;
+  height: 80%;
 }
 
 .project-details {
@@ -168,6 +180,7 @@ export default {
 .project-description {
   font-size: .75rem;
   color: var(--primary-light);
+  height: 25px;
 }
 
 .project-links {

@@ -1,7 +1,10 @@
 <template>
   <section class="about">
     <article class="about-summary">
-    <h2 class="about-header">About Me</h2>
+      <header class="about-header">
+        <p class="name">about</p>
+        <h2 class="about-heading">Summary</h2>
+      </header>
       <p class="about-content">Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.<br><br>
       A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.</p>
     </article>
@@ -57,10 +60,11 @@ export default {
 }
 
 .bottom {
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
-.about-header {
+.about-heading {
+  padding-top: 1rem;
   font-size: 3rem;
 }
 
