@@ -8,7 +8,7 @@
     <div class="project-container">
       <article class="project" v-for="project in projectData" :key="project">
         <div class="project-top">
-          <img :src="require(`../assets/images/${project.imageUrl}.png`)" class="project-img" :class="{ screenImg: !project.responsive }" />
+          <img :src="require(`../assets/images/${project.imageUrl}.png`)" class="project-img" />
 
         </div>
         <div class="project-details">
@@ -36,8 +36,7 @@ export default {
         description: 'A Mona Lisa NFT collection running on the Ethereum blockchain.',
         imageUrl: 'MintALisa',
         github: 'https://github.com/AbdulSaid/MintALisa',
-        liveSite: "www.gabi.pro",
-        responsive: true
+        liveSite: "www.gabi.pro"
       },
       {
         id: 2,
@@ -46,8 +45,7 @@ export default {
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
         imageUrl: 'PizzaNGo',
         github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro",
-        responsive: true
+        liveSite: "www.gabi.pro"
       },
       {
         id: 3,
@@ -56,8 +54,7 @@ export default {
         description: 'An app that allows a user to login to view, create, edit and delete playlists.',
         imageUrl: 'Playlister',
         github: 'https://github.com/gabigf/playlister',
-        liveSite: "www.gabi.pro",
-        responsive: false
+        liveSite: "www.gabi.pro"
       },
       {
         id: 4,
@@ -66,8 +63,7 @@ export default {
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
         imageUrl: 'PizzaNGo',
         github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro",
-        responsive: true
+        liveSite: "www.gabi.pro"
       },
       {
         id: 5,
@@ -76,8 +72,7 @@ export default {
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
         imageUrl: 'PizzaNGo',
         github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro",
-        responsive: true
+        liveSite: "www.gabi.pro"
       },
       {
         id: 6,
@@ -86,8 +81,7 @@ export default {
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
         imageUrl: 'PizzaNGo',
         github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro",
-        responsive: true
+        liveSite: "www.gabi.pro"
       }
     ];
 
@@ -150,11 +144,6 @@ export default {
 .project-img {
   width: 400px;
   padding-bottom: 0.5rem;
-}
-
-.screenImg {
-  padding-bottom: 0;
-  height: 80%;
 }
 
 .project-details {
