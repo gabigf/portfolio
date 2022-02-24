@@ -100,12 +100,13 @@ export default {
   font-weight: 800;
   line-height: 48px;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .faq-summary {
   line-height: 32px;
   color: var(--primary-light);
+  margin-bottom: 2rem;
 }
 
 .faq-btn {
@@ -148,6 +149,10 @@ export default {
 
   .faq-heading {
     margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .faq-summary {
     margin-bottom: 0;
   }
 }

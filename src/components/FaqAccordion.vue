@@ -1,11 +1,19 @@
 <template>
   <div class="faq-container">
     <div class="accordion" v-for="faq in faqData" :key="faq">
-      
-      <div class="accordion-item" @click="handleClick(faq)" :class="{ open: faq.isOpen }" >
+      <div
+        class="accordion-item"
+        @click="handleClick(faq)"
+        :class="{ open: faq.isOpen }"
+      >
         <button class="accordion-question">
-          {{ faq.question}}
-          <img class="arrow" src="../assets/images/arrow.png" alt="+" :class="{ flip: faq.isOpen }" />
+          {{ faq.question }}
+          <img
+            class="arrow"
+            src="../assets/images/arrow.png"
+            alt="+"
+            :class="{ flip: faq.isOpen }"
+          />
         </button>
         <div class="accordion-collapse" v-if="faq.isOpen">
           <div class="accordion-content">
@@ -18,11 +26,10 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref } from "vue";
 export default {
   name: "Faq",
   setup() {
-
     const faqData = ref([
       {
         id: 1,
@@ -47,23 +54,23 @@ export default {
       },
     ]);
 
-    const handleClick = el => {
+    const handleClick = (el) => {
       el.isOpen = !el.isOpen;
       for (const faq of faqData.value) {
         if (faq.id !== el.id) {
           faq.isOpen = false;
         }
       }
-    }
+    };
 
     return { faqData, handleClick };
-  }
+  },
 };
 </script>
 
 <style>
 .faq-container {
-  width: 55%;
+  width: 100%;
   padding-top: 3.5rem;
 }
 
@@ -85,6 +92,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: initial;
   width: 100%;
   height: 6.5rem;
   font-size: 24px;
@@ -102,7 +110,8 @@ export default {
 .accordion-collapse {
   display: flex;
   justify-content: center;
-  height: 8.5rem;
+  height: fit-content;
+  padding-bottom: 1rem;
 }
 
 .accordion-content {
@@ -121,7 +130,22 @@ export default {
 }
 
 @keyframes spin1 {
-0% { transform: rotate(0deg);}
-100% { transform: rotate(180deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .faq-container {
+    width: 55%;
+  }
+
+  .accordion-collapse {
+    height: 8.5rem;
+    padding-bottom: 0;
+  }
 }
 </style>
