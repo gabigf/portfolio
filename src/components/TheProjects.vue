@@ -91,7 +91,7 @@ export default {
 
 <style>
 .projects {
-  padding: 4rem 2rem 0 2rem;
+  padding: 3rem 2rem 0 2rem;
   height: 150vh;
   width: 100%;
   background-image: linear-gradient(180deg, #FDF0E9  37%, transparent 37%);
@@ -99,16 +99,17 @@ export default {
 }
 
 .project-container {
-  display: grid;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 190%;
+  padding-bottom: 2rem;
 }
 
 .project {
-  border-radius: 4.28412px;
+  border-radius: 6px;
   height: 346px;
-  width: 434px;
+  width: 100%;
   background: var(--light-bg);
   display: flex;
   flex-direction: column;
@@ -141,8 +142,8 @@ export default {
 }
 
 .project-img {
-  width: 400px;
-  padding-bottom: 0.5rem;
+  width: 300px;
+  padding-bottom: 1rem;
 }
 
 .project-details {
@@ -184,6 +185,30 @@ export default {
 
 .link:hover {
   text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .project-container {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .projects {
+    padding: 4rem 2rem 0 2rem;
+  }
+
+  .project {
+    height: 346px;
+    width: 434px;
+  }
+
+  .project-img {
+    width: 400px;
+    padding-bottom: 0.5rem;
+  }
 }
 
 </style>
