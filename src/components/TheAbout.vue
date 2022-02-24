@@ -46,6 +46,7 @@ export default {
 
 .about-summary {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin: 0 2rem;
 }
@@ -64,15 +65,15 @@ export default {
 }
 
 .about-heading {
-  padding-top: 1rem;
+  padding-top: .5rem;
   font-size: 3rem;
 }
 
 .about-content {
-  width: 71%;
   color: var(--primary-light);
-  font-size: 1.25rem;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-top: 2rem;
 }
 
 .about-bottom {
@@ -82,6 +83,7 @@ export default {
 
 .faq {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin: 4rem 2rem;
 }
@@ -90,7 +92,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 33%;
   height: 20rem;
 }
 
@@ -98,6 +99,8 @@ export default {
   font-size: 40px;
   font-weight: 800;
   line-height: 48px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .faq-summary {
@@ -118,5 +121,34 @@ export default {
 .faq-btn:hover {
   border-bottom: 1px solid var(--primary);
   background: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-summary {
+    flex-direction: row;
+  }
+
+  .about-content {
+    width: 71%;
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+  
+  .about-bottom {
+    margin-top: 0;
+  }
+
+  .faq {
+    flex-direction: row;
+  }
+
+  .faq-header {
+    width: 33%;
+  }
+
+  .faq-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 </style>
