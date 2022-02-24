@@ -4,7 +4,7 @@
       <div
         class="accordion-item"
         @click="handleClick(faq)"
-        :class="{ open: faq.isOpen }"
+        :class="{ open: faq.isOpen, first: faq.id === 1, last: faq.id === 3 }"
       >
         <button class="accordion-question">
           {{ faq.question }}
@@ -83,8 +83,16 @@ export default {
   cursor: pointer;
 }
 
+.first {
+  border-radius: 6px 6px 0 0;
+}
+
+.last {
+  border-radius: 0 0 6px 6px;
+}
+
 .arrow {
-  width: 2rem;
+  width: 1.7rem;
 }
 
 .accordion-question {
@@ -94,9 +102,9 @@ export default {
   text-align: initial;
   width: 100%;
   height: 6.5rem;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
-  padding: 0 2rem 0 2rem;
+  padding: 0 1rem 0 1rem;
 }
 
 .accordion-question,
@@ -145,6 +153,15 @@ export default {
   .accordion-collapse {
     height: 8.5rem;
     padding-bottom: 0;
+  }
+
+  .accordion-question {
+    padding: 0 2rem 0 2rem;
+    font-size: 24px;
+  }
+
+  .arrow {
+    width: 2rem;
   }
 }
 </style>

@@ -62,7 +62,7 @@ export default {};
 }
 
 .tag-line {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   text-transform: capitalize;
   letter-spacing: -2px;
   font-weight: 800;
@@ -104,6 +104,10 @@ export default {};
   .intro {
     width: 32rem;
     height: 24rem;
+  }
+
+  .tag-line {
+    font-size: 4.5rem;
   }
 
   .contact-container {

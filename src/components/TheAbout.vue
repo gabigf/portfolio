@@ -66,7 +66,7 @@ export default {
 
 .about-heading {
   padding-top: .5rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .about-content {
@@ -92,11 +92,11 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 20rem;
+  height: 23rem;
 }
 
 .faq-heading {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 800;
   line-height: 48px;
   margin-top: 1rem;
@@ -154,6 +154,10 @@ export default {
 
   .faq-summary {
     margin-bottom: 0;
+  }
+
+  .about-heading {
+    font-size: 3rem;
   }
 }
 </style>
