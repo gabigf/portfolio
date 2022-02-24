@@ -93,9 +93,11 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 .menu input {
   display: none;
 }
+
 .menu input + div span {
   --rotateY: 0deg;
   --background: transparent;
@@ -113,6 +115,7 @@ nav {
   backface-visibility: hidden;
   transition: transform 0.6s cubic-bezier(0.2, 0.64, 0.48, 1.24);
 }
+
 .menu input + div span:before,
 .menu input + div span:after {
   --rotate: 0deg;
@@ -128,28 +131,37 @@ nav {
   backface-visibility: hidden;
   transform: translate(-50%, -50%) rotate(var(--rotate)) translateZ(6px);
 }
+
 .menu input + div span:first-child {
   --background: var(--secondary);
 }
+
 .menu input + div span:first-child:before {
   --rotate: -45deg;
 }
+
 .menu input + div span:first-child:after {
   --rotate: 45deg;
 }
+
 .menu input + div span:last-child {
   --rotateY: 180deg;
 }
+
 .menu input + div span:last-child:before {
   box-shadow: 0 -5px 0 var(--icon), 0 5px 0 var(--icon);
 }
+
 .menu input + div span:last-child:after {
   display: none;
 }
+
 .menu input:checked + div span:first-child {
   --rotateY: -180deg;
 }
+
 .menu input:checked + div span:last-child {
   --rotateY: 0deg;
 }
+
 </style>
