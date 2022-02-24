@@ -10,7 +10,7 @@
           {{ faq.question }}
           <img
             class="arrow"
-            src="../assets/images/arrow.png"
+            src="../assets/images/arrow.svg"
             alt="+"
             :class="{ flip: faq.isOpen }"
           />
@@ -85,7 +85,6 @@ export default {
 
 .arrow {
   width: 2rem;
-  content: url("../assets/images/arrow.png");
 }
 
 .accordion-question {
