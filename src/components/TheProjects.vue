@@ -194,6 +194,7 @@ export default {
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
+    height: initial;
   }
 
   .projects {
