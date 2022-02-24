@@ -2,7 +2,7 @@
   <div class="faq-container">
     <div class="accordion" v-for="faq in faqData" :key="faq">
       
-      <div class="accordion-item" @click="handleClick(faq)" :class="{ active: faq.isOpen }" >
+      <div class="accordion-item" @click="handleClick(faq)" :class="{ open: faq.isOpen }" >
         <button class="accordion-question">
           {{ faq.question}}
           <img class="arrow" src="../assets/images/arrow.png" alt="+" :class="{ flip: faq.isOpen }" />
@@ -111,7 +111,7 @@ export default {
   line-height: 2rem;
 }
 
-.active {
+.open {
   background: white;
 }
 
