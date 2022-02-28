@@ -120,7 +120,7 @@ export default {
 }
 
 .projects-header h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 1rem 0 1rem 0;
 }
 
@@ -199,6 +199,11 @@ export default {
 
   .projects {
     padding: 4rem 2rem 0 2rem;
+  }
+
+  .projects-header h2 {
+    font-size: 3rem;
+    padding: 1rem 0 1rem 0;
   }
 
   .project {
