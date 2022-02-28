@@ -36,7 +36,7 @@ export default {
         description: 'A Mona Lisa NFT collection running on the Ethereum blockchain.',
         imageUrl: 'MintALisa',
         github: 'https://github.com/AbdulSaid/MintALisa',
-        liveSite: "www.gabi.pro"
+        liveSite: null
       },
       {
         id: 2,
@@ -44,43 +44,44 @@ export default {
         techStack: 'jQuery, NodeJS, Express, SCSS',
         description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
         imageUrl: 'PizzaNGo',
-        github: 'https://github.com/sidpatel93/Pizza-N-Go'
+        github: 'https://github.com/sidpatel93/Pizza-N-Go',
+        liveSite: null
       },
       {
         id: 3,
         title: 'Playlister',
         techStack: 'Vue, Firebase, HTML, CSS',
-        description: 'An app that allows a user to login to view, create, edit and delete playlists.',
+        description: 'An app that allows a user to login to view, create and delete playlists.',
         imageUrl: 'Playlister',
         github: 'https://github.com/gabigf/playlister',
-        liveSite: "www.gabi.pro"
+        liveSite: "https://playlister.netlify.app/"
       },
       {
         id: 4,
         title: 'Live-Chat',
         techStack: 'Vue, Firebase, HTML, CSS',
-        description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
+        description: 'A public chatroom that can be accessed by signing up/logging in.',
         imageUrl: 'LiveChat',
-        github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro"
+        github: 'https://github.com/gabigf/live-chat',
+        liveSite: "https://live-chat-vue.netlify.app"
       },
       {
         id: 5,
         title: 'Task Manager',
-        techStack: 'jQuery, NodeJS, Express, SCSS',
-        description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
+        techStack: 'Vue, JS, HTML, CSS',
+        description: 'A to-do list created using vueJS and json-server. The user can create, edit and delete a task. They can also view filtered lists based on task completion.',
         imageUrl: 'Task-manager',
-        github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro"
+        github: 'https://github.com/gabigf/project-planner',
+        liveSite: null
       },
       {
         id: 6,
         title: 'Wi-Know',
-        techStack: 'jQuery, NodeJS, Express, SCSS',
-        description: 'A pizza ordering and pick up app that acts as an intermediary between the client and the restaurant.',
+        techStack: 'jQuery, HTML, SCSS',
+        description: 'A flash card app to learn about 5 different wine regions.',
         imageUrl: 'Wi-Know',
-        github: 'https://github.com/sidpatel93/Pizza-N-Go',
-        liveSite: "www.gabi.pro"
+        github: 'https://github.com/gabigf/Wi-know2.0',
+        liveSite: "https://gabigf.github.io/Wi-know2.0/index.html"
       }
     ];
 
