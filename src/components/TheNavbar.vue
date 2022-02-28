@@ -4,8 +4,8 @@
 
     <!-- Tablets and desktop starting at 720px window width -->
     <ul class="nav-options" v-if="windowWidth >= 720">
-      <li class="nav-link">Projects</li>
       <li class="nav-link">About</li>
+      <li class="nav-link">Projects</li>
       <li class="nav-link">Resume</li>
     </ul>
     <button class="secondary-dark contact" v-if="windowWidth >= 720">
