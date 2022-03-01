@@ -54,7 +54,7 @@ export default {
 .thin-line {
   content: '';
   margin: 4rem 0 0 1rem;
-  height: 2px;
+  height: 1px;
   background-color: #F3D1BF;
   width: 80%;
   align-self: center;
