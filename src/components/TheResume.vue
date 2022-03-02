@@ -133,10 +133,6 @@ export default {};
   margin: 0 2rem 0 2rem;
 }
 
-.resume-header {
-  margin-bottom: 5.5rem;
-}
-
 .resume-heading {
   font-size: 2.5rem;
   line-height: 48px;
