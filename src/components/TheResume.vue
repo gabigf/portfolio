@@ -143,7 +143,7 @@ export default {};
   display: flex;
   flex-direction: column;
   width: 97%;
-  margin: 0 2rem 0 2rem;
+  margin: 0 2rem 10rem 2rem;
 }
 
 .resume-heading {
