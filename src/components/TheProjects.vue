@@ -113,7 +113,7 @@ export default {
 .projects {
   padding: 3rem 2rem 0 2rem;
   height: fit-content;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   background-image: linear-gradient(180deg, #fdf0e9 37%, transparent 37%);
   color: var(--primary);
   display: flex;
