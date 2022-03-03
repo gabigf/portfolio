@@ -1,5 +1,5 @@
 <template>
-  <section class="home">
+  <section class="home" id="home">
     <article class="intro">
       <h3 class="name">Gabriela Guimarães</h3>
       <p class="tag-line">Making digital products</p>
@@ -8,7 +8,7 @@
         business understanding.
       </p>
       <div class="contact-container">
-        <button class="primary-btn">See my work</button>
+        <button class="primary-btn"><a href="#projects">See my work</a></button>
         <p>Download my CV</p>
       </div>
     </article>

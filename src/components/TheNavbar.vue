@@ -1,12 +1,12 @@
 <template>
   <nav>
-    <h2 class="logo">GG</h2>
+    <h2 class="logo"><a href="#home">GG</a></h2>
 
     <!-- Tablets and desktop starting at 720px window width -->
     <ul class="nav-options" v-if="windowWidth >= 720">
-      <li class="nav-link">About</li>
-      <li class="nav-link">Projects</li>
-      <li class="nav-link">Resume</li>
+      <li class="nav-link"><a href="#about">About</a></li>
+      <li class="nav-link"><a href="#projects">Projects</a></li>
+      <li class="nav-link"><a href="#resume">Resume</a></li>
     </ul>
     <button class="secondary-dark contact" v-if="windowWidth >= 720">
       Contact

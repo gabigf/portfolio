@@ -1,5 +1,5 @@
 <template>
-  <section class="resume">
+  <section class="resume" id="resume">
     <header class="resume-header">
       <span class="name">resume</span>
       <h2 class="resume-heading">Professional Review</h2>
